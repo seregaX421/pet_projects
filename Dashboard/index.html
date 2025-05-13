@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="global">
+
+        <aside>
+
+            <a href="/dashboard" data-link>
+                <div class="router-btn dashboard">
+                    <img src="./images/icon-main.png" alt="home-icon">
+                    <span>Dashboard</span>
+                </div>
+            </a>
+            <a href="/transactions" data-link>
+                <div class="router-btn transactions">
+                    <img src="./images/icon-transactions.png" alt="transactions-icon">
+                    <span>Transactions</span>
+                </div>
+            </a>
+            <a href="/profile" data-link>
+                <div class="router-btn profile">
+                    <img src="./images/icon-profile.png" alt="profile-icon">
+                    <span>Profile</span>
+                </div>
+            </a>
+
+        </aside>
+
+        <main id="main">
+
+        </main>
+
+    </div>
+
+    <div class="edit-overlay">
+        <div id="edit-modal">
+            <h2>Edit Profile</h2>
+            <div class="modal-select">
+                <div class="close-modal-btn">
+                    X
+                </div>
+                <div class="modal-select-main">
+                    <div class="modal-select-header">
+                        <span class="modal-select-placeholder">Edit</span>
+                        <div class="show-btn"><img src='./images/select-triangle.png' /></div>
+                    </div>
+                    <div class="modal-select-options">
+                        <span class="modal-select-option">Given name</span>
+                        <span class="modal-select-option">Family name</span>
+                        <span class="modal-select-option">Phone number</span>
+                        <span class="modal-select-option">Email</span>
+                        <span class="modal-select-option">Password</span>
+                        <span class="modal-select-option">Date of birth</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edit-modal-main">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
