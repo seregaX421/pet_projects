@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">
+            MyWeather
+        </h1>
+        <div class="line"></div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Погода</a></li>
+                <li><a href="#">О проекте</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main">
+        <section class="search-weather">
+            <div class="search-block">
+                <input type="text" class="search-city" id="search-city" placeholder="Где вы хотите узнать погоду?" onfocus="searchAnimation1(this)" onblur="searchAnimation2(this)">
+                <button class="search-btn" onclick="searchWeather()" onmousedown="event.preventDefault();" type="button"><img src="search.png" alt="Поиск"></button>
+            </div>
+            <div class="weather-data">
+                    
+            </div>
+        </section>
+
+        <section class="weather-map">
+            <div id="map"></div>
+        </section>
+        <section class="about">
+
+        </section>
+    </main>
+    
+    <footer class="footer">
+
+    </footer>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
